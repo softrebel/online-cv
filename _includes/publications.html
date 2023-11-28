@@ -1,4 +1,4 @@
-{% assign publications = site.data.data.publications %}
+{% assign publications = data.publications %}
 {% if publications %}
 <section class="section publications-section">
 
@@ -17,7 +17,11 @@
   {% endif %}
 
   {% for publication in publications.papers %}
-  <div class="item">
+  {% if publication.rtl %}
+    <div dir ="rtl" class="item">
+      {% else %}
+      <div dir ="ltr" class="item">
+      {% endif %}
     {% if publication.link %}
       <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
     {% else %}

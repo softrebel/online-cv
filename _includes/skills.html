@@ -1,4 +1,4 @@
-{% assign skills = site.data.data.skills %}
+{% assign skills = data.skills %}
 {% if skills %}
 <section class="skills-section section">
 
@@ -10,7 +10,7 @@
     {{ skills.title }}
   </h2>
 
-  <div class="skillset">
+  <div dir="ltr" class="skillset">
 
     {% for skill in skills.toolset %}
     <div class="item">
