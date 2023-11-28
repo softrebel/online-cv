@@ -1,12 +1,13 @@
 ---
 layout: print
 permalink: /print
+title: index
 ---
-
+{% include global.html %}
 
 {% include career-profile.html %}
 
-{% unless site.data.data.sidebar.education %}
+{% unless data.sidebar.education %}
   {% include education.html %}
 {% endunless %}
 
