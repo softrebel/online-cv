@@ -6,13 +6,17 @@
 
 
 // define variable with front matter
-{% if site.data.data.sidebar.position == 'left' %}
-$resume-order: 2;
-$sidebar-order: 1;
-{% else %}
+{% if site.data.static.css.sidebar.position == 'left' %}
 $resume-order: 1;
 $sidebar-order: 2;
+{% else %}
+$resume-order: 2;
+$sidebar-order: 1;
 {% endif %}
 
 @import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
 @import "default"; // main partials
+
+.list-unstyled{
+    padding-right:0 !important;
+}

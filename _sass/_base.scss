@@ -196,14 +196,14 @@ p {
     color: $text-color;
     font-size: 16px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 2px;
     font-weight: 500;
     flex: 75%;
   }
   .time,
   .cert-url {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     color: $text-grey;
     flex: 25%;
@@ -226,6 +226,11 @@ p {
     .intro {
       margin-bottom: 30px;
     }
+    .item {
+      margin-bottom: 15px;
+    }
+  }
+  .oss-section{
     .item {
       margin-bottom: 15px;
     }
