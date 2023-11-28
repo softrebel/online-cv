@@ -1,0 +1,182 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: محمدرضا شاقوزی
+    tagline: به عنوان توسعه‌دهنده پایتون
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: sh.mohammad66@gmail.com
+    phone: 0903 621 4286
+    timezone: Asia/Tehran
+    citizenship:
+    website:  #do not add http://
+    linkedin: shaghouzi
+    xing:
+    github: softrebel
+    telegram: # add your nickname without '@' sign
+    gitlab:
+    bitbucket:
+    twitter:
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: 164188933-mohammadreza-sh # Number-Username, e.g. 123456-alandoe
+    pdf:
+    scholar: https://scholar.google.com/citations?user=WAiaNWYAAAAJ
+
+    languages:
+      title: زبان
+      info:
+        - idiom: فارسی
+          level: بومی
+
+        - idiom: انگلیسی
+          level: خواندن و نوشتن
+
+
+    interests:
+      title: علاقمندی‌ها
+      info:
+        - item: بدن‌سازی
+          link:
+
+        - item: گیم
+          link:
+
+        - item: مطالعه
+          link:
+
+career-profile:
+    title: پروفایل
+    summary: |
+      برای اولین بار سال 1396 در کلاس داده‌کاوی دانشگاه با زبان پایتون آشنا شدم و به عنوان زبان مکمل در کنار دیگر زبان‌های در مشاغل مختلف استفاده می‌کردم؛ به عنوان مثال برای ایجاد api سبک یا crawler از آن استفاده می‌کردم. از سال 1398 به تدریس آن در مجتمع فنی مشغول شدم و از سال 1400 به طور جدی به حرفه اصلی من تبدیل شد.
+education:
+    title: تحصیلات
+    info:
+      - degree: کارشناسی مهندسی کامپیوتر - نرم‌افزار
+        university: دانشگاه دولتی قم
+        time: 1392 - 1396
+        details: |
+          پروژه پایانی کارشناسی من،ایجاد مدل word2vec از ویکی‌پدیای فارسی و ارائه آن به صورت وب‌سرویس بر بستر وب بود.
+      - degree: ارشد مهندسی فناوری اطلاعات
+        university: دانشگاه تربیت مدرس
+        time: 1400-1402
+        details: |
+          پایان نامه ارشد من، پیش‌بینی زمان اوج محبوبیت هشتک‌های توییتر فارسی است.
+
+experiences:
+    title: سابقه شغلی
+    info:
+      - role: مدرس Python
+        time: 1398 - تاکنون
+        company: مجتمع فنی - شعبه نیاوران
+        details: |
+          در دوره‌های مختلف، از مقدمات پایتون تا تحلیل داده و یادگیری ماشینی با ابزارهای پایتونی را تدریس می‌کنم.
+            - Python (60 h)
+            - Data Analysis (30 h)
+            - Machine Learning (40 h)
+      - role: توسعه‌دهنده وب - FastAPI
+        time: 1400
+        company: دانش گستر سینا
+        details: |
+          در پروژه‌های اتوماسیون شبکه‌های اجتماعی مشارکت داشتم.
+            - طراحی API با رعایت معماری REST
+            - توسعه هسته پروژه با استفاده از Celery
+
+      - role: برنامه‌نویس Python
+        time: 1397-1398
+        company: سپهر پیام تدبیر
+        details: |
+          در این شرکت وظیفه طراحی کرولر اخبار خبرگزاری‌ها با استفاده از ابزارهای پایتونی مانند requests, scrapy را بر عهده داشتم.
+          همچنین پس از جمع‌آوری داده، مدل word2vec بر روی آن‌ها آموزش دادم تا برای کارهای بعدی شرکت استفاده شود.
+            - Web Cralwer using requests, scrapy
+            - Word2Vec training over crawled corpus
+
+
+
+projects:
+    title: بخشی از پروژه‌ها
+    intro: >
+      بخشی از پروژه‌هایی که تاکنون انجام داده ام:
+    assignments:
+      - title: سیستم No Code AI برای سیاستگذاری (پروژه بنیاد ملی نخبگان)
+        link: "#"
+        tagline: "Python, FastAPI, Scikit-learn, tensorflow."
+
+      - title: وب‌سرویس لاگین و دریافت فالور اینستاگرام به صورت API
+        link: "https://github.com/softrebel/fastapi-instagram-api"
+        tagline: "Python, Fast API, requests"
+
+      - title: کرولر استخراج پایان‌نامه‌ها از سایت ایرانداک
+        link: "https://github.com/softrebel/irandoc-scraper"
+        tagline: "Python, scrapy"
+
+      - title: کرولر جابینجا بهمراه بات تلگرامی دریافت آگهی‌ها
+        link: "https://github.com/softrebel/jobOnjaBot"
+        tagline: "Python, Telegram Bot API"
+
+      - title: کرولر google maps :جمع آوری نقاط مکانی بهمراه مشخصات
+        link: "https://github.com/softrebel/googleMapCrawler"
+        tagline: "Python, Selenium, BeautifulSoup"
+      - title: پیاده‌سازی وب سرویس از روی مدل برداری ساخته شده از کلمات ویکی‌پدیا فارسی با الگوریتم word2vec
+        link: ""
+        tagline: "Python, Word Embedding , Flask, Word2Vec "
+
+oss:
+    title: مشارکت در پروژه‌های متن باز
+    intro: >
+      در زیر لیست پروژه‌های متن باز که در توسعه آن‌ها مشارکت داشتم لیست شده است.
+    contributions:
+      - title: pybsky
+        link: "https://github.com/softrebel/pybsky"
+        tagline: "BlueSky Python client"
+
+      - title: tehran stocks
+        link: "https://github.com/ghodsizadeh/tehran-stocks"
+        tagline: "A python package that helps to access TSETMC stock price history, Using OOP Interface"
+
+      - title: Instagram Private API
+        link: "https://github.com/ping/instagram_private_api"
+        tagline: "A Python wrapper for the Instagram private API with no 3rd party dependencies. Supports both the app and web APIs."
+
+publications:
+    title: انتشارات
+    intro: |
+      در این قسمت مقالات و کتاب‌های مرتبط لیست می‌شود.
+    papers:
+      - title: آموزش وب‌کاوی با scrapy
+        link: "https://www.digikala.com/product/dkp-10782989/%DA%A9%D8%AA%D8%A7%D8%A8-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%88%D8%A8-%DA%A9%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-scrapy-%D8%A7%D8%AB%D8%B1-%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7-%D8%B4%D8%A7%D9%82%D9%88%D8%B2%DB%8C-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AF%DB%8C%D8%A8%D8%A7%DA%AF%D8%B1%D8%A7%D9%86-%D8%AA%D9%87%D8%B1%D8%A7%D9%86/"
+        authors: محمدرضا شاقوزی
+        conference: انتشارات دیباگران
+        rtl: True
+      - title: A Comparison of Centrality Measures for Community Evolution Discovery
+        link: "https://doi.org/10.1109/ICWR54782.2022.9786228"
+        authors: Javad RafieeFard, Babak Teimourpour, Mohammadreza Shaghouzi, Maryam Jami
+        conference: 2022 8th International Conference on Web Research (ICWR)
+        rtl: False
+skills:
+    title: کمی‌سازی مهارت‌ها
+
+    toolset:
+      - name: Python
+        level: 80%
+
+      - name: Scrapy & requests
+        level: 70%
+
+      - name: FastAPI
+        level: 60%
+
+      - name: Django
+        level: 60%
+
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+    And edited by me :)
