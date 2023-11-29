@@ -4,7 +4,7 @@
 
 sidebar:
     about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: محمدرضا شاقوزی
@@ -55,48 +55,43 @@ sidebar:
 career-profile:
     title: پیشینه
     summary: |
-      برای اولین بار سال 1396 در کلاس داده‌کاوی دانشگاه با زبان پایتون آشنا شدم و به عنوان زبان مکمل در کنار دیگر زبان‌های در مشاغل مختلف استفاده می‌کردم؛ به عنوان مثال برای ایجاد api سبک یا crawler از آن استفاده می‌کردم. از سال 1398 به تدریس آن در مجتمع فنی مشغول شدم و از سال 1400 به طور جدی به حرفه اصلی من تبدیل شد.
+      من محقق هوش مصنوعی در حوزه شبکه‌های عصبی گرافی و عضو بنیاد ملی نخبگان هستم. علاقه اصلی من در بلند مدت، مدل‌سازی و توسعه سیستم‌های شبکه‌‎ای(گرافی) است و عمده پروژه‌هایی که انجام می‌دهم در زمینه تحلیل شبکه‌های اجتماعی و پیش‌بینی وقایع آن است. تا به اینجا، تجربه پیاده‌سازی سیستم‌های اطلاعات مدیریت در چند شرکت پیمانکار سازمان‌های دولتی را دارم. همچنین تمایل من به تدریس باعث شد که در مجتمع فنی تهران نیز به عنوان مدرس زبان‌های برنامه‌نویسی و هوش مصنوعی مشغول باشم.
 education:
     title: تحصیلات
     info:
-      - degree: کارشناسی مهندسی کامپیوتر - نرم‌افزار
-        university: دانشگاه دولتی قم
-        time: 1392 - 1396
-        details: |
-          پروژه پایانی کارشناسی من،ایجاد مدل word2vec از ویکی‌پدیای فارسی و ارائه آن به صورت وب‌سرویس بر بستر وب بود.
       - degree: ارشد مهندسی فناوری اطلاعات
         university: دانشگاه تربیت مدرس
         time: 1400-1402
         details: |
           پایان نامه ارشد من، پیش‌بینی زمان اوج محبوبیت هشتک‌های توییتر فارسی است.
+      - degree: کارشناسی مهندسی کامپیوتر - نرم‌افزار
+        university: دانشگاه دولتی قم
+        time: 1392 - 1396
+        details: |
+          پروژه پایانی کارشناسی من، ایجاد مدل word2vec از ویکی‌پدیای فارسی و ارائه آن به صورت وب‌سرویس بر بستر وب بود.
+
 
 experiences:
     title: سابقه شغلی
     info:
       - role: مدرس Python
-        time: 1398 - تاکنون
+        time: 1402
         company: مجتمع فنی - شعبه نیاوران
         details: |
-          در دوره‌های مختلف، از مقدمات پایتون تا تحلیل داده و یادگیری ماشینی با ابزارهای پایتونی را تدریس می‌کنم.
+          در دوره‌های مختلف، از تحلیل داده تا یادگیری عمیق با ابزارهای پایتونی را تدریس می‌کنم.
             - Python (60 h)
             - Data Analysis (30 h)
             - Machine Learning (40 h)
       - role: توسعه‌دهنده وب - FastAPI
-        time: 1400
+        time: 1402
         company: دانش گستر سینا
         details: |
-          در پروژه‌های اتوماسیون شبکه‌های اجتماعی مشارکت داشتم.
-            - طراحی API با رعایت معماری REST
-            - توسعه هسته پروژه با استفاده از Celery
+          همکاری در طراحی یک پلتفرم هوشمند برای مدیریت اکانت در شبکه‌های اجتماعی
 
-      - role: برنامه‌نویس Python
+      - role: کارشناس NLP
         time: 1397-1398
         company: سپهر پیام تدبیر
-        details: |
-          در این شرکت وظیفه طراحی کرولر اخبار خبرگزاری‌ها با استفاده از ابزارهای پایتونی مانند requests, scrapy را بر عهده داشتم.
-          همچنین پس از جمع‌آوری داده، مدل word2vec بر روی آن‌ها آموزش دادم تا برای کارهای بعدی شرکت استفاده شود.
-            - Web Cralwer using requests, scrapy
-            - Word2Vec training over crawled corpus
+        details: ساخت یک مدل word2vec از مجموعه داده اخبار فارسی خبرگزاری‌ها
 
 
 
@@ -109,41 +104,20 @@ projects:
         link: "#"
         tagline: "Python, FastAPI, Scikit-learn, tensorflow."
 
-      - title: وب‌سرویس لاگین و دریافت فالور اینستاگرام به صورت API
-        link: "https://github.com/softrebel/fastapi-instagram-api"
-        tagline: "Python, Fast API, requests"
+      - title: اجتماع یابی بر روی گراف مقالات ایرانداک
+        link: "https://github.com/softrebel/irandoc_crawler"
+        tagline: "Python, igraph"
 
-      - title: کرولر استخراج پایان‌نامه‌ها از سایت ایرانداک
-        link: "https://github.com/softrebel/irandoc-scraper"
-        tagline: "Python, scrapy"
+      - title: کدبیس یادگیری ماشینی با pyspark
+        link: "https://github.com/softrebel/spark_project/tree/master/doc"
+        tagline: "Python, pyspark"
 
-      - title: کرولر جابینجا بهمراه بات تلگرامی دریافت آگهی‌ها
-        link: "https://github.com/softrebel/jobOnjaBot"
-        tagline: "Python, Telegram Bot API"
 
-      - title: کرولر google maps :جمع آوری نقاط مکانی بهمراه مشخصات
-        link: "https://github.com/softrebel/googleMapCrawler"
-        tagline: "Python, Selenium, BeautifulSoup"
       - title: پیاده‌سازی وب سرویس از روی مدل برداری ساخته شده از کلمات ویکی‌پدیا فارسی با الگوریتم word2vec
         link: ""
         tagline: "Python, Word Embedding , Flask, Word2Vec "
 
-oss:
-    title: مشارکت در پروژه‌های متن باز
-    intro: >
-      در زیر لیست پروژه‌های متن باز که در توسعه آن‌ها مشارکت داشتم لیست شده است.
-    contributions:
-      - title: pybsky
-        link: "https://github.com/softrebel/pybsky"
-        tagline: "BlueSky Python client"
 
-      - title: tehran stocks
-        link: "https://github.com/ghodsizadeh/tehran-stocks"
-        tagline: "A python package that helps to access TSETMC stock price history, Using OOP Interface"
-
-      - title: Instagram Private API
-        link: "https://github.com/ping/instagram_private_api"
-        tagline: "A Python wrapper for the Instagram private API with no 3rd party dependencies. Supports both the app and web APIs."
 
 publications:
     title: انتشارات
@@ -167,13 +141,13 @@ skills:
       - name: Python
         level: 80%
 
-      - name: Scrapy & requests
-        level: 70%
+      - name: Pytorch
+        level: 60%
 
       - name: FastAPI
         level: 60%
 
-      - name: Django
+      - name: Tensorflow
         level: 60%
 
 
